@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADMIN Profile </title>
+</head>
+<body>
+
+<h1>ADMIN Profile</h1> 
+
+	<a href="/adminhome">Back</a> 
+	<a href="/logout">logout</a> 
+	<a href="/adminhome/edit/<%=id%>">Edit</a>
+
+	<br>
+	<br>
+
+	<table border="1" width="300px" >
+		<tr>
+			<td width="35%">User Name</td>
+			<td width="2%">:</td>
+			<td><%=username%></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td>:</td>
+			<td><%=password%></td>
+		</tr>
+	</table>
+
+</body>
+</html>

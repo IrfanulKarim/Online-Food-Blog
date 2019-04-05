@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SHOW MEMBER</title>
+</head>
+<body>
+	<h1>SHOW MEMBER</h1>
+
+	<a href="/adminhome">Back</a> |
+	<a href="/logout">logout</a> 
+	<br>
+	<br>
+
+	<table border="1" width="400px" >
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Password</th>
+			<!-- <th>Mytution</th> -->
+		</tr>
+
+		<% for(var i=0; i < tList.length; i++){ %>
+		<tr>
+			<td><%= tList[i].id %></td>
+			<td><%= tList[i].username %></td>
+			<td><%= tList[i].password %></td>
+			<!-- <td><%= tList[i].class %></td> -->
+			<!-- <td><%= tList[i].mytution %></td> -->
+			<td>
+				<a href="/adminhome/delete/<%= tList[i].id %>">Delete</a> |
+			</td>
+		</tr>
+		<% } %>
+	</table>
+</body>
+</html>

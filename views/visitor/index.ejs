@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WELCOME TO ONLINE FOOD BLOG</title>
+</head>
+<body>
+	<form method="post" >
+
+		<a href="registration">Not Registration yet! Registration Here...</a>
+
+		<fieldset>
+			<legend>Login Form</legend>
+			<table>
+				<tr>
+					<td>Username</td>
+					<td><input type="text" name="uname" pattern="A-Za-Z{"Invalid Username"}" required="" id="username"></td>
+					<span id="usern" class="text-danger "></span>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="password" name="password" pattern="0-9{"Invalid Password"}" required="" id="password"></td>
+					<span id="passw" class="text-danger "></span>
+				</tr>
+				<label>Type</label>
+				<select name="usertype">
+				  <option value="admin">ADMIN</option>
+				  <option value="member">MEMBER</option>
+				</select>
+				<tr>
+					<td><input type="submit" name="submit" value="Submit"></td>
+				</tr>
+			</table>
+		</fieldset>
+
+	</form>
+</body>
+</html>
